@@ -1,0 +1,16 @@
+{
+    "name": "rabbit",
+	"description": "test promgram",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+    "homepage_url": "https://www.itxdm.com",
+	"content_scripts": [{
+		"matches": ["http://weibo.com/[你的微博ID]/profile*"],
+		"js": ["js/rabbit.js"]
+	}]
+}
